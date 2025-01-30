@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1142/1142892.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- <img id="dark" src="/assets/dark.svg" alt="moon icon"> -->
+        <input id="input" readonly type="text" value="0">
+        <div class="button-container">
+            <div class="left">
+                <button class="grey-btn" onclick="clearDisplay()">Ac</button>
+                <button class="grey-btn" onclick="removeElement()"><img width="28px" src="assets/backspace.svg" alt="backspace icon"></button>
+                <button class="blue" onclick="addElement('/')">/</button>
+                <button onclick="addElement('7')">7</button>
+                <button onclick="addElement('8')">8</button>
+                <button onclick="addElement('9')">9</button>
+                <button onclick="addElement('4')">4</button>
+                <button onclick="addElement('5')">5</button>
+                <button onclick="addElement('6')">6</button>
+                <button onclick="addElement('1')">1</button>
+                <button onclick="addElement('2')">2</button>
+                <button onclick="addElement('3')">3</button>
+                <button class="zero" onclick="addElement('0')">0</button>
+                <button>.</button>
+
+            </div>
+            <div class="right">
+                <button onclick="addElement('*')">*</button>
+                <button onclick="addElement('-')">-</button>
+                <button onclick="addElement('+')">+</button>
+                <button class="equal" onclick="result()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
